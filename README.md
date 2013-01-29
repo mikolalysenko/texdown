@@ -1,4 +1,11 @@
 texdown
 =======
 
-A preprocessor for markdown that adds LaTeX style equations
+TeXdown is a markdown preprocessor that replaces latex expressions within a markdown document with base64 encoded images.  For example, the expression:
+
+
+    $ e^{i \pi} = - 1$
+    
+Becomes:
+
+![alt text](data:png;charset=US-ASCII;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAAAqCAAAAAAckX8IAAAACXBIWXMAAAEsAAABLABziOlSAAAB6klEQVRYw+2Y8bGDIAzGswIruAIrsAIrsEJWYAVWcIWswAqswAp9AdHqu1q9V0V81/zR2lavv0u+fAHgcYuAdz8GG2+AGQTYG2B6ALpD0X24hTZv0kJfzKMwvQbZTz2PRk2hXRWyiHEb03f0kFBayAmYh6xBSXJuM2uYku9RgAMlGEsERGQ0v9D5/e+dAtiB2SuuNIDPz4h0f59yqLFGHpmww12YyPpD6PK1zRI1ibCrYfcx12sXZooO5rkTDBsrTqW9mJz7mQgdxPRVe5gG9OyTkpm1OcwIwGV2YVyFJAFgxRXTO0x2m9FTbW4gEcbUUsY012MSzx2jRTH/bJquYLE3DQIVV2MGBTqlLkpd8oc8isJCp7wAdddi9mIsaD80eOgkSj+6UXmkW8Ok1YhHYrL7mMmIaPzr53bDL99/h4bVkAdi8q5HTL3zB/15XI3+QEwe9OPE8QIfLcQLTG6NMnEiivM9Z03GW5i8HBGpQFqCPn/O4JqM9QamBFBM6cjXKGdYkzFtYEIejI3tfl5ihnPkRnQs5meUdXzzY8w6vqkWmKQb1aYFeI5eL3yjmHG2pLAdtdrpnMGSwl6p60/h2B9sakqJ06FAEaVXaQxpoamNRHKo4agFl8ti79BSK2fY/+5E7ov5xbw4fgDgV1+regoTCwAAADx0RVh0Y29tbWVudAAgSW1hZ2UgZ2VuZXJhdGVkIGJ5IEdQTCBHaG9zdHNjcmlwdCAoZGV2aWNlPXBwbXJhdykKBoGJFQAAAABJRU5ErkJggg== "e^{i \pi} = -1")

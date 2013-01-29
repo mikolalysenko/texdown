@@ -1,0 +1,11 @@
+texdown
+=======
+
+TeXdown is a markdown preprocessor that replaces latex expressions within a markdown document with base64 encoded images.  For example, the expression:
+
+
+    $$ e^{i \pi} = - 1$$
+    
+Becomes:
+
+$e^{i \pi} = -1$

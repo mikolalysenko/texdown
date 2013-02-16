@@ -35,7 +35,8 @@ module.exports = function(markdown, options) {
           result.emit("error", err);
           return;
         }
-        otoks[idx] = '![alt text](data:image/png;base64,'+data.toString("base64") + ' "' + md_escape(itoks[idx]) +'")';
+        var escaped = md_escape(itoks[idx]);
+        otoks[idx] = ['<img src="data:image/png;base64,', data.toString("base64"), '">'].join('');
         if(--nspawned === 0) {
           result.end(otoks.join(""));
         }
